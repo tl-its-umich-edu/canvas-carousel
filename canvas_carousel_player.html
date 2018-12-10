@@ -53,26 +53,32 @@
 	font-family:Verdana, Geneva, sans-serif;
 	margin-top:8px;
 }
+
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
 }
+
 .carousel-fade .carousel-inner .active {
   opacity: 1;
 }
+
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   opacity: 0;
   z-index: 1;
 }
+
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
+
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
     .carousel-fade .carousel-inner > .item.active.right {
@@ -95,6 +101,8 @@
     }
 	
 }
+
+
 ul, menu, dir {
     -webkit-padding-start: 0px;
 }
@@ -108,20 +116,35 @@ ul, menu, dir {
 <body class="hidden-xs">
 <div id="canvas-carousel" class="carousel slide carousel-fade hidden-xs" data-ride="carousel" role="complementary" data-interval="11000" hover="pause" > 
   <!-- Indicators -->
-  
-  
   <!-- Wrapper for slides -->
   <ul class="carousel-inner hidden-xs">
-    <!-- first slide -->
-    <li class="item active"> <img src="https://some_image.gif" alt="alt text here" onclick="window.open('http://some_url')">
-      <h3 class="carousel-caption sr-only" id="carousel-caption1">caption for screen readers here</h3>
-    </li>
-    <!-- second slide -->
-    <li class="item active"> <img src="https://some_image.gif" alt="alt text here" onclick="window.open('http://some_url')">
-      <h3 class="carousel-caption sr-only" id="carousel-caption1">caption for screen readers here</h3>
-    </li>
-  </ul>
-  
+   
+    
+				<li class="item active"> 
+    <img src="https://s3.amazonaws.com/umich-tl-carousel/content/student-evaluations.png" alt="Can&apos;t find your eveluation in Canvas? click here." onclick="window.open('http://umich.bluera.com/umich')">
+      	<h3 class="carousel-caption sr-only" id="carousel-caption1">Can&apos;t find your eveluation in Canvas? click here. </h3>
+	  </li>
+				
+				<li class="item"> 
+		<img src="https://s3.amazonaws.com/umich-tl-carousel/content/CanvasCourseWrapup18.png" alt="Canvas Course Wrap Up workshop." onclick="window.open('https://ttc.iss.lsa.umich.edu/ttc/?s=winter+tune')">
+      	<h3 class="carousel-caption sr-only" id="carousel-caption1">Click the image to register for this workshop. </h3>
+      	  </li>
+			
+				<li class="item"> 
+    <img src="https://s3.amazonaws.com/umich-tl-carousel/content/OptimizeCanvas18.png" alt="Canvas workshop to learn how to optimize your Canvas course." onclick="window.open('https://ttc.iss.lsa.umich.edu/ttc/?s=winter+tune')">
+      	<h3 class="carousel-caption sr-only" id="carousel-caption1">Click the image to register for this workshop. </h3>
+	  </li>
+          
+      	   <li class="item"> 
+		<img src="https://s3.amazonaws.com/umich-tl-carousel/content/Quizzes.Next18.png" alt="Canvas Quizzes,Next workshop." onclick="window.open('https://ttc.iss.lsa.umich.edu/ttc/?s=winter+tune')">
+      	<h3 class="carousel-caption sr-only" id="carousel-caption1">Click the image to register for this workshop. </h3>
+      	  </li>
+										
+      	 <li class="item"> 
+		<img src="https://s3.amazonaws.com/umich-tl-carousel/content/Qualtrics18+(1).png" alt="Qualtrics hands on workshop." onclick="window.open('https://ttc.iss.lsa.umich.edu/ttc/?s=winter+tune')">
+      	<h3 class="carousel-caption sr-only" id="carousel-caption1">Click the image to register for this workshop. </h3>
+      	  </li>   	  
+  </ul>  
   <!-- Controls --> 
   <a class="left carousel-control" href="#canvas-carousel" role="button" data-slide="prev" title="Previous Slide" aria-label="Previous Slide"> <div class="glyphicon glyphicon-chevron-left"><div class="cnrtl_btn-text">PREV</div></div> </a> <a class="right carousel-control" href="#canvas-carousel" role="button" data-slide="next" title="Next Slide" aria-label="Next Slide"> <div class="glyphicon glyphicon-chevron-right"><div class="cnrtl_btn-text">NEXT</div></div></a>
   <div id="play_pause">
